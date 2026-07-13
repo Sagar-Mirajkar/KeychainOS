@@ -1,0 +1,12 @@
+﻿Arduino IDE:
+ESP32 board package:
+Selected board: ESP32S3 Dev Module
+TFT_eSPI:
+Arduino_GFX:
+Flash size: 8MB
+PSRAM setting:
+USB CDC On Boot:
+Upload speed:
+Working rotation:
+Working inversion setting:
+Working SPI frequency:
