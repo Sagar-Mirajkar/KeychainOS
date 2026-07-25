@@ -1,9 +1,11 @@
-"""Harmless KeychainOS OTA Python module test."""
+"""Deliberately failing OTA rollback test."""
 
-VERSION = "0.2"
+VERSION = "0.3-ROLLBACK-TEST"
 
 
 def run():
-    print("Downloaded Python module is working")
+    print("Running deliberately failing update")
     print("OTA module version:", VERSION)
-    return True
+
+    # False deliberately triggers automatic rollback.
+    return False
