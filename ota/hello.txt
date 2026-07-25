@@ -1,2 +1,1 @@
-Hello from KeychainOS OTA
-Version 0.1
+"""Safe KeychainOS OTA download test.
