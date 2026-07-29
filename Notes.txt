@@ -1,0 +1,14 @@
+nano ~/.vnc/xstartup
+
+!/bin/sh
+xrdb $HOME/.Xresources
+startxfce4 &
+
+chmod +x ~/.vnc/xstartup
+
+vncserver :1 -geometry 1280x720 -localhost
+
+vncpasswd
+
+127.0.0.1:5901
+localhost:5901
