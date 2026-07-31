@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.settings.wifi",
+  "name": "Wi-Fi",
+  "version": "0.1.0",
+  "category": "settings",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 10,
+  "enabled": true,
+  "description": "Scan and connect to Wi-Fi",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
