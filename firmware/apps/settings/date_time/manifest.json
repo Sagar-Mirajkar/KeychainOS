@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.settings.time",
+  "name": "Date & Time",
+  "version": "0.1.0",
+  "category": "settings",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 20,
+  "enabled": true,
+  "description": "NTP sync and time display preferences",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
