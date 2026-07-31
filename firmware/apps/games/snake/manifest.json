@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.snake",
+  "name": "Snake",
+  "version": "0.1.0",
+  "category": "games",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 10,
+  "enabled": true,
+  "description": "Classic wraparound Snake",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
