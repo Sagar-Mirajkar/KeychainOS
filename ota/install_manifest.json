@@ -2,5 +2,198 @@
   "format": 1,
   "name": "KeychainOS Core",
   "version": "0.1.0",
-  "files": []
+  "minimum_micropython": "1.28.0",
+  "board": "ESP32_GENERIC_S3-SPIRAM_OCT",
+  "files": [
+    {
+      "path": "/apps/games/snake/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/games/snake/app.py",
+      "sha256": "8e00da0c5de3ce7765575deea01d5f2f5a518ebca387c20c82d1f723975c3c39"
+    },
+    {
+      "path": "/apps/games/snake/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/games/snake/manifest.json",
+      "sha256": "adf26136d6cc7f2c84f19f77753185138d3339f287a59e80f9eb9351b8f750dd"
+    },
+    {
+      "path": "/apps/games/tic_tac_toe/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/games/tic_tac_toe/app.py",
+      "sha256": "34a68f0d2127db501a3c4bfe0b1307e37cc568134c9e129ec7265901e5efc93a"
+    },
+    {
+      "path": "/apps/games/tic_tac_toe/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/games/tic_tac_toe/manifest.json",
+      "sha256": "1f9e0eb719df2568f7971c4e86180b8013f5b0990d68e53875f256c5b75f87ea"
+    },
+    {
+      "path": "/apps/settings/date_time/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/date_time/app.py",
+      "sha256": "9badf1b21811c1dcfeb4931bcbb5c8e719e5e09f0d9c309724611fc1ab39ea88"
+    },
+    {
+      "path": "/apps/settings/date_time/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/date_time/manifest.json",
+      "sha256": "d45e295e91c2dd30a8d7e2819869da4e5d85e1411360840d3b6111fe3ffee179"
+    },
+    {
+      "path": "/apps/settings/screensaver/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/screensaver/app.py",
+      "sha256": "229593b69c9d0d3df25da2d13f59228a7fb4a38c02a062aa47847ce1fe15a51c"
+    },
+    {
+      "path": "/apps/settings/screensaver/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/screensaver/manifest.json",
+      "sha256": "648cbe5293721961067ee14e86fe1ec5c3cc7b81798788d9d19414e9e94f64b5"
+    },
+    {
+      "path": "/apps/settings/wifi/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/wifi/app.py",
+      "sha256": "0afddc42597f90f1dbcf2d8c86cd4f3f6ff06a08a4ace230836780da32fb8eba"
+    },
+    {
+      "path": "/apps/settings/wifi/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/settings/wifi/manifest.json",
+      "sha256": "8b8d1b152a8a25b5b07d42d85ab9bd5f39cf81e0f1bc08b41a6614197611f1c8"
+    },
+    {
+      "path": "/apps/tools/clock/app.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/tools/clock/app.py",
+      "sha256": "9d001e23634502dbf6a0575f16d71db56a18767eaca58e4b6a32ff32d87ea8e5"
+    },
+    {
+      "path": "/apps/tools/clock/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/apps/tools/clock/manifest.json",
+      "sha256": "0ffb637e613e5e71bf2801ac15bff10e35d5bc965da5102ad08cd881e2a26228"
+    },
+    {
+      "path": "/boot.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/boot.py",
+      "sha256": "84ca5986907df23b529159bd02c2a289f3ea10894bcbf8be03b4e06792f2a6e0"
+    },
+    {
+      "path": "/main.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/main.py",
+      "sha256": "4f3f30aadd790a609cedee3bbef979b0cd4f49337e4a8c385930b67c77dde4fe"
+    },
+    {
+      "path": "/system/__init__.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/__init__.py",
+      "sha256": "c3f7c2517ac840d7d6336a96393024e439d254fecad1cdd17f730dd478dc5a9b"
+    },
+    {
+      "path": "/system/app_loader.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/app_loader.py",
+      "sha256": "7df38d4f2bf071421d4d00dd5f18676d567d3831e4366555541c0718544900d9"
+    },
+    {
+      "path": "/system/app_scanner.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/app_scanner.py",
+      "sha256": "6869115214992ea22f358166bbfeb835e07494c5abd285313954189273906cee"
+    },
+    {
+      "path": "/system/bootstrap.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/bootstrap.py",
+      "sha256": "ce0349382d178d61bd7c4f555e09d600c7eb38f30cd40079f9bd048a5c86911d"
+    },
+    {
+      "path": "/system/config.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/config.py",
+      "sha256": "c728117d6f8f6518604246e7a1f316bbef9215e0ab3aecb0760b726a936f412e"
+    },
+    {
+      "path": "/system/context.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/context.py",
+      "sha256": "541a853904a509b7818b4b6ab117d6226b55ef7539faec57f7c8541cd21a27cf"
+    },
+    {
+      "path": "/system/context_menu.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/context_menu.py",
+      "sha256": "a30217d73c44958bdc14d021253124b709566060656a25d3e5489b449ab87b4c"
+    },
+    {
+      "path": "/system/dialogs.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/dialogs.py",
+      "sha256": "f99a7d322c0be12d222928d4aaa4b4f08d8cb54b8406e6ad9fa6b6f32d1a592e"
+    },
+    {
+      "path": "/system/display.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/display.py",
+      "sha256": "80a6ddd8d249de76db3105186fe897cb8222805a333b1141f6fcd411619c035b"
+    },
+    {
+      "path": "/system/error_handler.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/error_handler.py",
+      "sha256": "9e8b3c0799217aa5912068e1250c3eeb5e3aed099173d174a3f338e728da87b9"
+    },
+    {
+      "path": "/system/file_operations.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/file_operations.py",
+      "sha256": "1e506d86bb178551bb8ea297bdcd6cf20b1a657a6ee4d0cf672d8ebff15e4f64"
+    },
+    {
+      "path": "/system/keyboard.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/keyboard.py",
+      "sha256": "b4d9911527e746bf23fa9d776b54a6d0405772fc27f9931542f30a4f44568219"
+    },
+    {
+      "path": "/system/launcher.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/launcher.py",
+      "sha256": "c3107f1780e878da5cd1835dbd0fb8e5a88714ee2107628843efbe31fe0473bd"
+    },
+    {
+      "path": "/system/manifest.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/manifest.py",
+      "sha256": "7d0dec35fa1c2036dfbedb42246abdc88b7e04901840b43307b49bf16fa741a2"
+    },
+    {
+      "path": "/system/navigation.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/navigation.py",
+      "sha256": "d302bc90daac52eca06e0a473acae9df73403f0e9b0a738f40d634162d1a67c0"
+    },
+    {
+      "path": "/system/screensaver.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/screensaver.py",
+      "sha256": "20d782e6b5e260fe373aca8f1de587270ca18e8602549c37638ee73c5b206905"
+    },
+    {
+      "path": "/system/time_service.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/time_service.py",
+      "sha256": "02ff12cba4a692c8323d4037973dcf89a756315132d03f7f6570a732d6ec76da"
+    },
+    {
+      "path": "/system/touch.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/touch.py",
+      "sha256": "fec12b7d98596553fe12c6268ae45829c59963de2be79911e95b7c55ae94c8db"
+    },
+    {
+      "path": "/system/trash_manager.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/trash_manager.py",
+      "sha256": "8f4baf98c81c3cc02285984d6a88196d2766771fdac6c1eef17d554013762194"
+    },
+    {
+      "path": "/system/ui.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/ui.py",
+      "sha256": "74d2276085ca40e0ec2c0ff6197494f884520a2ea71dd4ba0fdf949d65d9d75e"
+    },
+    {
+      "path": "/system/wifi_manager.py",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/system/wifi_manager.py",
+      "sha256": "879b1e79b7a0a474fe0895d2dd3ee22ab56e28055c5d998d24bc5412f100d7a3"
+    },
+    {
+      "path": "/themes/epaper_minimal/layout.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/themes/epaper_minimal/layout.json",
+      "sha256": "528ee1d9974776fd8fba05fff924286659a5287fba3e8cc54c0450b429794c4a"
+    },
+    {
+      "path": "/themes/epaper_minimal/manifest.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/themes/epaper_minimal/manifest.json",
+      "sha256": "8f023b748eacf7a6f840ffc351c927c7c977c2436ad9d352a456017f0679d1e9"
+    },
+    {
+      "path": "/themes/epaper_minimal/palette.json",
+      "url": "https://raw.githubusercontent.com/Sagar-Mirajkar/KeychainOS/refs/heads/main/firmware/themes/epaper_minimal/palette.json",
+      "sha256": "31ab1b9da21ab17151ea59fec0f2fc121881e4dee5b8f69f6e148469658e0cca"
+    }
+  ]
 }
