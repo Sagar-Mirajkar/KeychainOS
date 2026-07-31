@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.clock",
+  "name": "Clock",
+  "version": "0.1.0",
+  "category": "tools",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 10,
+  "enabled": true,
+  "description": "Clock, date and time sync",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
