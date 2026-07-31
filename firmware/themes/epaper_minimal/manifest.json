@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "id": "com.keychainos.theme.epaper",
+  "name": "Full Colour E-Paper",
+  "version": "0.1.0",
+  "runtime": "theme",
+  "entry": "palette.json",
+  "enabled": true
+}
