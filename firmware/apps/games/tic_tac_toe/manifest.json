@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.tictactoe",
+  "name": "Tic Tac Toe",
+  "version": "0.1.0",
+  "category": "games",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 20,
+  "enabled": true,
+  "description": "Local two-player Tic-Tac-Toe",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
