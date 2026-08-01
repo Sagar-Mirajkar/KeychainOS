@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "id": "com.keychainos.settings.device_info",
+  "name": "Device Info",
+  "version": "0.2.0",
+  "category": "settings",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 20,
+  "enabled": true,
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}

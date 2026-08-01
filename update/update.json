@@ -1,23 +1,123 @@
 {
   "format": 1,
-  "version": "0.1.1",
-  "name": "KeychainOS Update",
+  "version": "0.2.0",
+  "name": "KeychainOS Feature Pack",
   "restart_required": true,
   "files": [
     {
-      "source": "system_updater.py",
-      "destination": "/system/updater.py",
-      "sha256": "42987ff2e71ee1626801744c64c529c5042db0e485537cb88b1c185bdf94619d"
+      "source": "system__rgb565_viewer.py",
+      "destination": "/system/rgb565_viewer.py",
+      "sha256": "f0457adc59764fd7cc3359863bda8846833a60610f22ce59234ebe77648f7076"
     },
     {
-      "source": "update_app.py",
-      "destination": "/apps/settings/update/app.py",
-      "sha256": "787d0a3687e1fa3cbcd957ce000898f12022dbcd907452015bd162b74bc4bb89"
+      "source": "apps__tools__stopwatch__app.py",
+      "destination": "/apps/tools/stopwatch/app.py",
+      "sha256": "aa2c99da2760a7716fc4123081013ec976fc13ee7169f77ac1fc296426e2be06"
     },
     {
-      "source": "update_app_manifest.json",
-      "destination": "/apps/settings/update/manifest.json",
-      "sha256": "f38f42b11f118aaf72694a03472309f4e546add025692bf593107f1cd2cbff53"
+      "source": "apps__tools__timer__app.py",
+      "destination": "/apps/tools/timer/app.py",
+      "sha256": "bdde27e6dd5a159ed0e389b35a93815ea378a1143a46e0cb33a1ec30c052fe46"
+    },
+    {
+      "source": "apps__tools__rgb_viewer__app.py",
+      "destination": "/apps/tools/rgb_viewer/app.py",
+      "sha256": "f3360141803012303bba582875890ed0e3887c4a43e3a7d320f63104346e220a"
+    },
+    {
+      "source": "apps__games__flappy__app.py",
+      "destination": "/apps/games/flappy/app.py",
+      "sha256": "929f84aec262438ee6d79f8c49971a054403e83dd6671988e8ccdb76d5e1d9d6"
+    },
+    {
+      "source": "apps__games__pong__app.py",
+      "destination": "/apps/games/pong/app.py",
+      "sha256": "b1bceb76883ee7cdb861560d556526c855e216d560b5d0fafbcc33fd4bb61ac5"
+    },
+    {
+      "source": "apps__games__reaction__app.py",
+      "destination": "/apps/games/reaction/app.py",
+      "sha256": "da0f6400c2b17c49247e47e64a729e48d9bdb773738edab5852a369eccb0497d"
+    },
+    {
+      "source": "apps__settings__device_info__app.py",
+      "destination": "/apps/settings/device_info/app.py",
+      "sha256": "ef8446833912147066293db00c0166b011fc150990d5fc17b75548a6db143666"
+    },
+    {
+      "source": "apps__settings__display__app.py",
+      "destination": "/apps/settings/display/app.py",
+      "sha256": "6f35c54cc9210150dca9af7446b3be6ab0433921f7fef260416818d84089b36c"
+    },
+    {
+      "source": "themes__dark_modern__manifest.json",
+      "destination": "/themes/dark_modern/manifest.json",
+      "sha256": "ae74fcd600613abaa1b45f9829b69be539b779755e563b9c909b16564c3ae06f"
+    },
+    {
+      "source": "themes__dark_modern__palette.json",
+      "destination": "/themes/dark_modern/palette.json",
+      "sha256": "75fe8885dac7f81ead2531163e2ea13ba378b01a3346014f260b81b72ad23641"
+    },
+    {
+      "source": "themes__dark_modern__layout.json",
+      "destination": "/themes/dark_modern/layout.json",
+      "sha256": "532e895d9c973cce8222fdf3cff8f3578749160a5e88d2b7f70d106b84550430"
+    },
+    {
+      "source": "themes__pastel_soft__manifest.json",
+      "destination": "/themes/pastel_soft/manifest.json",
+      "sha256": "e1347463aa6ba3d7adebff6066f389e69b6a82e1d6b27b0dcf9c650e1e8bf871"
+    },
+    {
+      "source": "themes__pastel_soft__palette.json",
+      "destination": "/themes/pastel_soft/palette.json",
+      "sha256": "8ccab2c96505205f976bc7d723b3c075847a0cd0f66c958befcf70ad576df827"
+    },
+    {
+      "source": "themes__pastel_soft__layout.json",
+      "destination": "/themes/pastel_soft/layout.json",
+      "sha256": "532e895d9c973cce8222fdf3cff8f3578749160a5e88d2b7f70d106b84550430"
+    },
+    {
+      "source": "apps__games__flappy__manifest.json",
+      "destination": "/apps/games/flappy/manifest.json",
+      "sha256": "dccf5e4ef8de4abc8f39edcd04b3f627e30711bfbc9662bc97597ba4096db691"
+    },
+    {
+      "source": "apps__games__pong__manifest.json",
+      "destination": "/apps/games/pong/manifest.json",
+      "sha256": "63725d7ecb50ec79670642d93b466e393a69ad1fb08d726ac6e702d2af045af8"
+    },
+    {
+      "source": "apps__games__reaction__manifest.json",
+      "destination": "/apps/games/reaction/manifest.json",
+      "sha256": "2ba65b542d58aa5851297d05d054133c58011f5e0a3fb46d5f6a5258ae5bcc97"
+    },
+    {
+      "source": "apps__tools__stopwatch__manifest.json",
+      "destination": "/apps/tools/stopwatch/manifest.json",
+      "sha256": "7760267b626e3512e48ba11634c9747f9e785f58679241983c395a0bcb25e2ae"
+    },
+    {
+      "source": "apps__tools__timer__manifest.json",
+      "destination": "/apps/tools/timer/manifest.json",
+      "sha256": "f29b9dd68db43948cf97076e5e794a8da50042ede0c1a1ff246cf97340a95f3b"
+    },
+    {
+      "source": "apps__tools__rgb_viewer__manifest.json",
+      "destination": "/apps/tools/rgb_viewer/manifest.json",
+      "sha256": "9132f46ab8995900f6fb500bb2bc8be3919419c2fa717ed5bd594a0e900ca58b"
+    },
+    {
+      "source": "apps__settings__device_info__manifest.json",
+      "destination": "/apps/settings/device_info/manifest.json",
+      "sha256": "6daf715a0d2ad2d5834a95561a89fd421f6c1caa88d716e3de699ea1c4503d4f"
+    },
+    {
+      "source": "apps__settings__display__manifest.json",
+      "destination": "/apps/settings/display/manifest.json",
+      "sha256": "b4c5a0e046675319896e04f5582b7ad6e00de6b592f6ff28a772ecea6c975806"
     }
   ]
 }

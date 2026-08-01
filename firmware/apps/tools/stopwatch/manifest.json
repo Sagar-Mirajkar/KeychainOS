@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "id": "com.keychainos.tools.stopwatch",
+  "name": "Stopwatch",
+  "version": "0.2.0",
+  "category": "tools",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 10,
+  "enabled": true,
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}

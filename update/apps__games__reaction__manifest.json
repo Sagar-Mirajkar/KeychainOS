@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "id": "com.keychainos.games.reaction",
+  "name": "Reaction Test",
+  "version": "0.2.0",
+  "category": "games",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 30,
+  "enabled": true,
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
