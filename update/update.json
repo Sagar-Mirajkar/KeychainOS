@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "name": "KeychainOS Feature Pack",
   "restart_required": true,
   "files": [
@@ -118,6 +118,11 @@
       "source": "apps__settings__display__manifest.json",
       "destination": "/apps/settings/display/manifest.json",
       "sha256": "b4c5a0e046675319896e04f5582b7ad6e00de6b592f6ff28a772ecea6c975806"
+    },
+    {
+      "source": "passport_photo.rgb",
+      "destination": "/media/images/passport_photo.rgb",
+      "sha256": "ece39cd4b7bdafcd3ba4624d81b6b99c474a966ccbe146c7e0ba9a304e8a3d41"
     }
   ]
 }
