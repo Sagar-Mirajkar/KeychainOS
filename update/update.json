@@ -17,7 +17,7 @@
     {
       "source": "update_app_manifest.json",
       "destination": "/apps/settings/update/manifest.json",
-      "sha256": "354b423c86cf890bf5ffc381e6e560d1638764b9a738e0a56c748e004c8feb82"
+      "sha256": "f38f42b11f118aaf72694a03472309f4e546add025692bf593107f1cd2cbff53"
     }
   ]
 }
