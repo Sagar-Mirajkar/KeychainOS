@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "id": "com.keychainos.settings.update",
+  "name": "Update",
+  "version": "0.1.1",
+  "category": "settings",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 5,
+  "enabled": true,
+  "description": "Check GitHub and install changed KeychainOS files",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch",
+    "network",
+    "files.internal.read",
+    "files.internal.write"
+  ]
+}
