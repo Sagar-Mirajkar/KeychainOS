@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "id": "com.keychainos.settings.screensaver",
+  "name": "Screensaver",
+  "version": "0.1.0",
+  "category": "settings",
+  "runtime": "micropython",
+  "entry": "app.py",
+  "order": 30,
+  "enabled": true,
+  "description": "Choose clock, blank or image screensaver",
+  "author": "KeychainOS",
+  "permissions": [
+    "display",
+    "touch"
+  ]
+}
