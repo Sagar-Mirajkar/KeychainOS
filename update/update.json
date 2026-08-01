@@ -3,5 +3,21 @@
   "version": "0.1.1",
   "name": "KeychainOS Update",
   "restart_required": true,
-  "files": []
+  "files": [
+    {
+      "source": "system_updater.py",
+      "destination": "/system/updater.py",
+      "sha256": "42987ff2e71ee1626801744c64c529c5042db0e485537cb88b1c185bdf94619d"
+    },
+    {
+      "source": "update_app.py",
+      "destination": "/apps/settings/update/app.py",
+      "sha256": "787d0a3687e1fa3cbcd957ce000898f12022dbcd907452015bd162b74bc4bb89"
+    },
+    {
+      "source": "update_app_manifest.json",
+      "destination": "/apps/settings/update/manifest.json",
+      "sha256": "354b423c86cf890bf5ffc381e6e560d1638764b9a738e0a56c748e004c8feb82"
+    }
+  ]
 }
