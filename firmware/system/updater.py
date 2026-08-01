@@ -1,257 +1,299 @@
-"""KeychainOS dynamic full-colour e-paper-style UI."""
+"""KeychainOS flat-folder transactional updater.
 
-from system.display import (
-    WIDTH,
-    HEIGHT,
-    BLACK,
-    WHITE,
-    RED,
-    GREEN,
-    BLUE,
-    CYAN,
-    YELLOW,
+Reads /update/update.json from GitHub. Each entry maps a unique flat
+source filename to its intended destination path on the ESP.
+"""
+
+import gc
+import json
+import os
+
+try:
+    import uhashlib as hashlib
+except ImportError:
+    import hashlib
+
+try:
+    import ubinascii as binascii
+except ImportError:
+    import binascii
+
+
+UPDATE_BASE_URL = (
+    "https://raw.githubusercontent.com/"
+    "Sagar-Mirajkar/KeychainOS/refs/heads/main/update/"
 )
 
-# Full-colour e-paper-inspired palette.
-PAPER = 0xFF9C
-INK = 0x18E3
-MUTED = 0x738E
-BORDER = 0xAD55
-CARD = 0xF7BB
-CARD_SELECTED = WHITE
-TEAL = 0x04D3
-TEAL_DARK = 0x02A9
-SOFT_RED = 0xE186
-SOFT_BLUE = 0x9D7F
-SOFT_GREEN = 0xA6CE
-SOFT_YELLOW = 0xED47
-SOFT_PURPLE = 0xC4D8
+UPDATE_MANIFEST_URL = UPDATE_BASE_URL + "update.json"
 
-HEADER_HEIGHT = 42
-FOOTER_HEIGHT = 24
-GRID_TOP = 48
-GRID_LEFT = 6
-GRID_COLUMNS = 3
-GRID_ROWS = 3
-CARD_WIDTH = 72
-CARD_HEIGHT = 76
-CARD_GAP_X = 6
-CARD_GAP_Y = 7
-ITEMS_PER_PAGE = GRID_COLUMNS * GRID_ROWS
-BACK_RECT = (4, 4, 62, 32)
+CHUNK_SIZE = 1024
+DOWNLOAD_RETRIES = 4
 
 
-def trim_text(text, limit):
-    text = str(text)
-    if len(text) <= limit:
-        return text
-    if limit <= 3:
-        return text[:limit]
-    return text[: limit - 3] + "..."
+def exists(path):
+    """Return True when a file or directory exists."""
+
+    try:
+        os.stat(path)
+        return True
+
+    except OSError:
+        return False
 
 
-def draw_text(display, text, x, y, colour=INK, background=PAPER, width=None, height=16):
-    display.draw_text(text, x, y, colour, background, width, height)
+def make_directories(path):
+    """Create a directory and any missing parents."""
+
+    current = ""
+
+    for part in path.split("/"):
+        if not part:
+            continue
+
+        current += "/" + part
+
+        if not exists(current):
+            os.mkdir(current)
 
 
-def centred_text(display, text, y, colour=INK, background=PAPER):
-    display.centred_text(text, y, colour, background)
+def parent_directory(path):
+    """Return the parent directory of a path."""
+
+    position = path.rfind("/")
+
+    if position <= 0:
+        return "/"
+
+    return path[:position]
 
 
-def draw_back_button(display):
-    x, y, width, height = BACK_RECT
-    display.fill_rect(x, y, width, height, CARD)
-    display.outline_rect(x, y, width, height, BORDER, 1)
-    display.draw_text("< BACK", x + 7, y + 8, INK, CARD, 48)
+def remove_if_present(path):
+    """Remove a file if it exists."""
+
+    try:
+        os.remove(path)
+
+    except OSError:
+        pass
 
 
-def is_back_tap(x, y):
-    bx, by, width, height = BACK_RECT
-    return bx <= x < bx + width and by <= y < by + height
+def sha256_file(path):
+    """Return the lowercase SHA-256 hex digest of a file."""
+
+    digest = hashlib.sha256()
+
+    with open(path, "rb") as source:
+        while True:
+            block = source.read(
+                CHUNK_SIZE
+            )
+
+            if not block:
+                break
+
+            digest.update(block)
+
+    return binascii.hexlify(
+        digest.digest()
+    ).decode()
 
 
-def draw_header(display, title, show_back=False):
-    display.fill_rect(0, 0, WIDTH, HEADER_HEIGHT, PAPER)
-    display.fill_rect(0, HEADER_HEIGHT - 1, WIDTH, 1, BORDER)
-    if show_back:
-        draw_back_button(display)
-        title_x = 72
-        title_width = WIDTH - 78
-    else:
-        title_x = 8
-        title_width = WIDTH - 16
-    display.draw_text(trim_text(title, title_width // 8), title_x, 12, INK, PAPER, title_width)
+def requests_module():
+    """Return the available MicroPython HTTP module."""
+
+    try:
+        import requests
+        return requests
+
+    except ImportError:
+        import urequests
+        return urequests
 
 
-def draw_footer(display, text="Tap to open | Hold for menu"):
-    y = HEIGHT - FOOTER_HEIGHT
-    display.fill_rect(0, y, WIDTH, FOOTER_HEIGHT, PAPER)
-    display.fill_rect(0, y, WIDTH, 1, BORDER)
-    label = trim_text(text, 29)
-    display.centred_text(label, y + 5, MUTED, PAPER)
+def response_status(response):
+    """Return the HTTP status from a response."""
+
+    return getattr(
+        response,
+        "status_code",
+        getattr(
+            response,
+            "status",
+            200
+        )
+    )
 
 
-def icon_colour(name):
-    value = sum(ord(character) for character in str(name)) % 6
+def response_bytes(response):
+    """Read all bytes from a small HTTP response."""
+
+    if hasattr(response, "content"):
+        return response.content
+
+    if hasattr(response, "raw"):
+        blocks = []
+
+        while True:
+            block = response.raw.read(
+                CHUNK_SIZE
+            )
+
+            if not block:
+                break
+
+            blocks.append(block)
+
+        return b"".join(blocks)
+
+    return response.text.encode(
+        "utf-8"
+    )
+
+
+def download_manifest():
+    """Download and validate update/update.json."""
+
+    response = requests_module().get(
+        UPDATE_MANIFEST_URL
+    )
+
+    try:
+        status = response_status(
+            response
+        )
+
+        if status != 200:
+            raise RuntimeError(
+                "Update manifest HTTP {}"
+                .format(status)
+            )
+
+        manifest = json.loads(
+            response_bytes(
+                response
+            ).decode("utf-8")
+        )
+
+    finally:
+        response.close()
+
+    if manifest.get("format") != 1:
+        raise ValueError(
+            "Unsupported update manifest format"
+        )
+
+    if not isinstance(
+        manifest.get("files"),
+        list
+    ):
+        raise ValueError(
+            "Update manifest files must be a list"
+        )
+
+    return manifest
+
+
+def validate_entry(entry):
+    """Validate one flat update mapping entry."""
+
+    source = entry.get("source")
+    destination = entry.get(
+        "destination"
+    )
+    expected = entry.get("sha256")
+
+    if (
+        not source
+        or "/" in source
+        or "\\" in source
+    ):
+        raise ValueError(
+            "Invalid flat update source"
+        )
+
+    if (
+        not destination
+        or not destination.startswith("/")
+    ):
+        raise ValueError(
+            "Invalid update destination"
+        )
+
+    if (
+        not expected
+        or len(expected) != 64
+    ):
+        raise ValueError(
+            "Invalid update SHA-256"
+        )
+
     return (
-        SOFT_BLUE,
-        SOFT_GREEN,
-        SOFT_YELLOW,
-        SOFT_PURPLE,
-        SOFT_RED,
-        TEAL,
-    )[value]
+        source,
+        destination,
+        expected.lower()
+    )
 
 
-def draw_generic_icon(display, name, x, y, selected=False):
-    colour = icon_colour(name)
-    display.fill_rect(x, y, 34, 30, colour)
-    display.outline_rect(x, y, 34, 30, INK if selected else BORDER, 1)
-    letter = str(name).strip()[:1].upper() or "?"
-    display.draw_text(letter, x + 13, y + 7, INK, colour, 8)
+def download_file(
+    source,
+    destination
+):
+    """Download one flat update file with retries."""
 
+    url = (
+        UPDATE_BASE_URL
+        + source
+    )
 
-def item_rect(index_on_page):
-    column = index_on_page % GRID_COLUMNS
-    row = index_on_page // GRID_COLUMNS
-    x = GRID_LEFT + column * (CARD_WIDTH + CARD_GAP_X)
-    y = GRID_TOP + row * (CARD_HEIGHT + CARD_GAP_Y)
-    return x, y, CARD_WIDTH, CARD_HEIGHT
+    last_error = None
 
+    for attempt in range(
+        1,
+        DOWNLOAD_RETRIES + 1
+    ):
+        response = None
 
-def draw_card(display, item, page_index, selected=False):
-    x, y, width, height = item_rect(page_index)
-    background = CARD_SELECTED if selected else CARD
-    border = TEAL_DARK if selected else BORDER
-    if selected:
-        display.fill_rect(x + 3, y + 3, width, height, 0xCE59)
-    display.fill_rect(x, y, width, height, background)
-    display.outline_rect(x, y, width, height, border, 2 if selected else 1)
-    name = item.get("name", "Unnamed") if isinstance(item, dict) else str(item)
-    draw_generic_icon(display, name, x + 19, y + 9, selected)
-    label = trim_text(name.upper(), 8)
-    label_width = max(8, len(label) * 8)
-    display.draw_text(label, x + (width - label_width) // 2, y + 49, INK, background, label_width)
-    if isinstance(item, dict):
-        if item.get("broken"):
-            display.fill_rect(x + width - 12, y + 4, 8, 8, SOFT_RED)
-        elif item.get("update"):
-            display.fill_rect(x + width - 12, y + 4, 8, 8, SOFT_YELLOW)
+        try:
+            response = (
+                requests_module().get(
+                    url
+                )
+            )
 
+            status = response_status(
+                response
+            )
 
-def normalize_items(items):
-    result = []
-    for item in items or ():
-        if isinstance(item, dict):
-            result.append(item)
-        else:
-            result.append({"name": str(item)})
-    return result
+            if status != 200:
+                raise RuntimeError(
+                    "HTTP {} for {}"
+                    .format(
+                        status,
+                        source
+                    )
+                )
 
+            with open(
+                destination,
+                "wb"
+            ) as output:
+                if hasattr(
+                    response,
+                    "raw"
+                ):
+                    while True:
+                        block = (
+                            response.raw.read(
+                                CHUNK_SIZE
+                            )
+                        )
 
-def draw_grid(display, items, selected=0, title="KeychainOS", show_back=False):
-    items = normalize_items(items)
-    count = len(items)
-    if count:
-        selected %= count
-        page = selected // ITEMS_PER_PAGE
-    else:
-        selected = 0
-        page = 0
+                        if not block:
+                            break
 
-    display.fill(PAPER)
-    draw_header(display, title, show_back)
+                        output.write(block)
 
-    if not items:
-        display.centred_text("No items installed", 132, MUTED, PAPER)
-        display.centred_text("Swipe down to refresh", 158, MUTED, PAPER)
-        draw_footer(display, "Hold empty area for options")
-        return {"page": 0, "pages": 1, "selected": 0}
-
-    start = page * ITEMS_PER_PAGE
-    visible = items[start : start + ITEMS_PER_PAGE]
-    for local_index, item in enumerate(visible):
-        draw_card(display, item, local_index, start + local_index == selected)
-
-    pages = (count + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
-    if pages > 1:
-        dot_width = 8
-        gap = 6
-        total = pages * dot_width + (pages - 1) * gap
-        dot_x = (WIDTH - total) // 2
-        dot_y = HEIGHT - FOOTER_HEIGHT - 9
-        for page_index in range(pages):
-            colour = TEAL_DARK if page_index == page else BORDER
-            display.fill_rect(dot_x + page_index * (dot_width + gap), dot_y, dot_width, 4, colour)
-
-    draw_footer(display)
-    return {"page": page, "pages": pages, "selected": selected}
-
-
-def draw_carousel(display, items, selected, section="KeychainOS"):
-    """Compatibility wrapper using the dynamic grid renderer."""
-    show_back = section not in ("KeychainOS", "Home")
-    return draw_grid(display, items, selected, section, show_back)
-
-
-def item_at(x, y, items, selected=0):
-    items = normalize_items(items)
-    if not items or y < GRID_TOP:
-        return None
-    page = (selected % len(items)) // ITEMS_PER_PAGE
-    start = page * ITEMS_PER_PAGE
-    for local_index in range(min(ITEMS_PER_PAGE, len(items) - start)):
-        rx, ry, width, height = item_rect(local_index)
-        if rx <= x < rx + width and ry <= y < ry + height:
-            return start + local_index
-    return None
-
-
-def draw_dialog(display, title, message, buttons=("OK",), danger=False):
-    display.fill_rect(16, 74, 208, 172, WHITE)
-    display.outline_rect(16, 74, 208, 172, SOFT_RED if danger else TEAL_DARK, 2)
-    display.centred_text(trim_text(title, 25), 88, SOFT_RED if danger else INK, WHITE)
-    lines = []
-    message = str(message)
-    while message:
-        lines.append(message[:25])
-        message = message[25:]
-    for index, line in enumerate(lines[:4]):
-        display.centred_text(line, 118 + index * 20, INK, WHITE)
-    button_count = max(1, len(buttons))
-    gap = 6
-    button_width = (188 - gap * (button_count - 1)) // button_count
-    for index, label in enumerate(buttons):
-        x = 26 + index * (button_width + gap)
-        display.fill_rect(x, 204, button_width, 32, CARD)
-        display.outline_rect(x, 204, button_width, 32, SOFT_RED if danger else BORDER, 1)
-        label = trim_text(label, max(1, (button_width - 4) // 8))
-        display.draw_text(label, x + 4, 212, INK, CARD, button_width - 8)
-    return (26, 204, button_width, 32, gap)
-
-
-def dialog_choice(x, y, buttons, geometry):
-    start_x, start_y, width, height, gap = geometry
-    if not (start_y <= y < start_y + height):
-        return None
-    for index, label in enumerate(buttons):
-        bx = start_x + index * (width + gap)
-        if bx <= x < bx + width:
-            return label
-    return None
-
-
-def draw_placeholder(display, title, message):
-    display.fill(PAPER)
-    draw_header(display, title, True)
-    display.centred_text(trim_text(message, 28), 138, MUTED, PAPER)
-    draw_footer(display, "Tap Back to return")
-
-
-def draw_error(display, title, error):
-    display.fill(PAPER)
-    draw_header(display, "Error", True)
-    display.centred_text(trim_text(title, 28), 96, SOFT_RED, PAPER)
-    display.centred_text(trim_text(type(error).__name__, 28), 126, INK, PAPER)
-    display.centred_text(trim_text(str(error), 28), 154, MUTED, PAPER)
-    draw_footer(display, "Tap Back to continue")
+                elif hasattr(
+                    response,
+                    "content"
+            
