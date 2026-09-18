@@ -1,0 +1,64 @@
+MICROPYTHON REFERENCE
+Generated: 2026-09-18 13:35:52
+
+STATUS: NEAR COMPLETE
+CONFIDENCE: 95%
+
+ROLE:
+Primary reference project.
+
+KNOWN WORKING MODULES
+
+
+Launcher
+Theme Engine
+Manifest System
+WiFi Manager
+OTA Manager
+Recovery System
+Keyboard
+Package Management
+Application Framework
+Touch Framework
+Display Framework
+File Operations
+System Boot
+Updater
+
+
+KNOWN APPLICATIONS
+
+
+Clock
+Timer
+Stopwatch
+WiFi Settings
+Display Settings
+Date Time
+Device Info
+
+Snake
+Flappy
+Pong
+Reaction Test
+Tic Tac Toe
+
+RGB Viewer
+
+
+FILESYSTEM ARCHITECTURE
+
+system/
+apps/
+themes/
+data/
+media/
+logs/
+cache/
+trash/
+disabled/
+
+
+IMPORTANT NOTE
+
+Future Copilot must prefer Micropython architecture before inventing new implementations.

@@ -1,0 +1,8 @@
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/sdkconfig.defaults
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/main/spi_lcd_touch_example_main.c
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/main/lvgl_demo_ui.c
+2026-09-08 15:40:29.4626812520 /root/projects/waveshare_test_original/main/idf_component.yml
+2026-09-08 15:40:29.4626812520 /root/projects/waveshare_test_original/main/Kconfig.projbuild
+2026-09-08 15:40:29.4526812520 /root/projects/waveshare_test_original/main/CMakeLists.txt
+2026-09-08 15:40:29.4526812520 /root/projects/waveshare_test_original/README.md
+2026-09-08 15:40:29.4426812520 /root/projects/waveshare_test_original/CMakeLists.txt

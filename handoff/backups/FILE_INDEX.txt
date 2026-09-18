@@ -1,0 +1,77 @@
+FILE INDEX
+Generated: 2026-09-18 13:35:52
+
+==================================================
+BACKUP FILES
+==================================================
+
+/sdcard/new handoff/backups/FILE_INDEX.txt
+/sdcard/new handoff/backups/decision_log.txt
+/sdcard/new handoff/backups/latest_activity.txt
+/sdcard/new handoff/backups/latest_build_analysis.txt
+/sdcard/new handoff/backups/micropython_reference.txt
+/sdcard/new handoff/backups/official_references.txt
+/sdcard/new handoff/backups/project_comparison.txt
+/sdcard/new handoff/backups/project_inventory.txt
+/sdcard/new handoff/backups/project_inventory_filtered.txt
+/sdcard/new handoff/backups/project_knowledge.txt
+/sdcard/new handoff/backups/project_notes.txt
+/sdcard/new handoff/backups/project_status.txt
+/sdcard/new handoff/backups/project_trees.txt
+/sdcard/new handoff/backups/user_projects.txt
+/sdcard/new handoff/backups/working_components.txt
+
+==================================================
+PROJECT FOLDERS
+==================================================
+
+/sdcard/new handoff/projects/01_easytest
+/sdcard/new handoff/projects/02_lvgl_demo_v9
+/sdcard/new handoff/projects/03_esp-brookesia
+/sdcard/new handoff/projects/hello_world
+/sdcard/new handoff/projects/keychainos
+/sdcard/new handoff/projects/keychainos_backup
+/sdcard/new handoff/projects/keychainos_display_working
+/sdcard/new handoff/projects/keychainos_launcher_working
+/sdcard/new handoff/projects/keychainos_phase2_working
+/sdcard/new handoff/projects/keychainos_phase3_backup
+/sdcard/new handoff/projects/snake_s3
+/sdcard/new handoff/projects/waveshare_test_original
+
+==================================================
+PURPOSE
+==================================================
+
+project_inventory.txt
+  Full discovered project list
+
+project_knowledge.txt
+  Project intelligence and summaries
+
+project_comparison.txt
+  Cross-project component comparison
+
+working_components.txt
+  Verified working modules
+
+micropython_reference.txt
+  Primary architecture reference
+
+latest_activity.txt
+  Most recently modified files
+
+FILE_INDEX.txt
+  Master archive table of contents
+
+==================================================
+EXTENDED CONTEXT
+==================================================
+
+If Copilot requires deeper context,
+inspect only the specific files needed.
+
+Prefer:
+latest_activity.txt
+working_components.txt
+micropython_reference.txt
+project folders

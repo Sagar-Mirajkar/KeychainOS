@@ -1,0 +1,21 @@
+COPILOT HANDOFF
+Generated: 2026-09-18 13:35:57
+
+READ IN ORDER:
+
+1. 01_PROJECT_STATE.txt
+2. 02_PROJECT_REFERENCE.txt
+
+MICROPYTHON IS THE TARGET ARCHITECTURE.
+
+Determine active project from timestamps.
+
+Continue from newest files.
+
+Always return complete cat commands.
+
+Format:
+
+cat > filename <<'EOF'
+FULL FILE CONTENT
+EOF

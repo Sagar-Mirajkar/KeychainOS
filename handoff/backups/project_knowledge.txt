@@ -1,0 +1,143 @@
+PROJECT KNOWLEDGE
+Generated: 2026-09-18 13:28:32
+
+PRIMARY REFERENCE PROJECT
+micropython
+
+ACTIVE PROJECT
+waves
+
+LESSONS PROJECT
+keychainos
+
+==================================================
+DISCOVERED PROJECTS
+==================================================
+
+hello_world
+hello_world
+keychainos
+keychainos_backup
+keychainos_display_working
+keychainos_launcher_working
+keychainos_phase2_working
+keychainos_phase3_backup
+01_easytest
+02_lvgl_demo_v9
+03_esp-brookesia
+waveshare_test_original
+
+==================================================
+KEYCHAINOS FEATURES
+==================================================
+PATH: /root/projects/keychainos_launcher_working
+PROJECT: keychainos_launcher_working
+components/brookesia_app_squareline_demo/assets/esp_brookesia_app_icon_launcher_squareline_112_112.c
+components/brookesia_core/systems/phone/assets/images/large/esp_brookesia_image_large_app_launcher_default_112_112.c
+components/brookesia_core/systems/phone/assets/images/middle/esp_brookesia_image_middle_app_launcher_default_112_112.c
+components/brookesia_core/systems/phone/assets/images/small/esp_brookesia_image_small_app_launcher_default_98_98.c
+components/brookesia_core/systems/phone/stylesheets/1024_600/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/1024_600/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/1280_800/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/1280_800/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/320_240/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/320_240/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/320_480/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/320_480/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/480_480/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/480_480/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/480_800/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/480_800/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/720_1280/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/720_1280/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/800_1280/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/800_1280/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/800_480/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/800_480/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/stylesheets/default/dark/app_launcher_data.hpp
+components/brookesia_core/systems/phone/stylesheets/default/dark/gesture_data.hpp
+components/brookesia_core/systems/phone/widgets/app_launcher/esp_brookesia_app_launcher.cpp
+components/brookesia_core/systems/phone/widgets/app_launcher/esp_brookesia_app_launcher.hpp
+components/brookesia_core/systems/phone/widgets/app_launcher/esp_brookesia_app_launcher_icon.cpp
+components/brookesia_core/systems/phone/widgets/app_launcher/esp_brookesia_app_launcher_icon.hpp
+components/brookesia_core/systems/phone/widgets/gesture/esp_brookesia_gesture.cpp
+components/brookesia_core/systems/phone/widgets/gesture/esp_brookesia_gesture.hpp
+components/brookesia_core/systems/phone/widgets/status_bar/esp_brookesia_status_bar_icon.cpp
+components/brookesia_core/systems/phone/widgets/status_bar/esp_brookesia_status_bar_icon.hpp
+components/brookesia_core/systems/speaker/assets/animations/mmap_generate_anim_icon.h
+components/brookesia_core/systems/speaker/assets/images/middle/speaker_image_middle_app_launcher_default_112_112.c
+components/brookesia_core/systems/speaker/stylesheets/360x360/dark/app_launcher_data.hpp
+components/brookesia_core/systems/speaker/stylesheets/360x360/dark/gesture_data.hpp
+components/brookesia_core/systems/speaker/widgets/app_launcher/esp_brookesia_app_launcher.cpp
+components/brookesia_core/systems/speaker/widgets/app_launcher/esp_brookesia_app_launcher.hpp
+components/brookesia_core/systems/speaker/widgets/app_launcher/esp_brookesia_app_launcher_icon.cpp
+components/brookesia_core/systems/speaker/widgets/app_launcher/esp_brookesia_app_launcher_icon.hpp
+components/brookesia_core/systems/speaker/widgets/gesture/esp_brookesia_gesture.cpp
+components/brookesia_core/systems/speaker/widgets/gesture/esp_brookesia_gesture.hpp
+components/esp32_s3_lcd_driver_board/include/bsp/touch.h
+components/waveshare__esp_lcd_touch_ft6336/CMakeLists.txt
+components/waveshare__esp_lcd_touch_ft6336/esp_lcd_touch_ft6336.c
+components/waveshare__esp_lcd_touch_ft6336/include/esp_lcd_touch_ft6336.h
+main/app_registry.c
+main/app_registry.h
+main/apps/registry.c
+main/apps/registry.h
+main/debug/gesture_test.c
+main/debug/gesture_test.h
+main/debug/touch_diag.c
+main/debug/touch_diag.h
+main/debug/touch_raw_diag.c
+main/dynamic_launcher.c
+main/dynamic_launcher.h
+main/home_registry.c
+main/input/gestures.c
+main/input/gestures.h
+main/launcher/launcher.c
+main/launcher/launcher.h
+main/media_registry.c
+main/media_registry.h
+main/spi_lcd_touch_example_main.c
+main/theme/theme.c
+main/theme/theme.h
+main/theme_database.c
+main/theme_database.h
+main/theme_discovery.c
+main/theme_discovery.h
+main/theme_manager.c
+main/theme_manager.h
+main/theme_scan.c
+main/theme_storage.c
+main/theme_storage.h
+main/themes.c
+main/touch/cst816d.c
+main/touch/cst816d.h
+main/ui/bitmap.c
+main/ui/bitmap.h
+main/ui/icons.c
+main/ui/icons.h
+main/ui/theme.h
+touch_backup/cst816d.c
+touch_backup/cst816d.h
+
+==================================================
+DISPLAY COMPONENTS
+==================================================
+main/display/st7789.c
+main/display/st7789.h
+
+==================================================
+TOUCH COMPONENTS
+==================================================
+main/touch/cst816d.c
+main/touch/cst816d.h
+touch_backup/cst816d.c
+touch_backup/cst816d.h
+
+==================================================
+WAY FORWARD
+==================================================
+1. Complete Waves project.
+2. Reuse Micropython architecture.
+3. Reuse working KeychainOS modules.
+4. Preserve ST7789 + CST816D stack.
+5. Maintain full cat-code responses.

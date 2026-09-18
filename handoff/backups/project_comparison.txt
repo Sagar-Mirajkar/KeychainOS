@@ -1,0 +1,60 @@
+PROJECT COMPARISON
+Generated: 2026-09-18 13:28:45
+
+KNOWN COMPONENTS
+
+----------------------------------------
+COMPONENT: st7789
+PROJECT: 01_easytest
+PROJECT: keychainos
+PROJECT: keychainos_display_working
+PROJECT: keychainos_launcher_working
+PROJECT: keychainos_phase2_working
+PROJECT: keychainos_phase3_backup
+
+----------------------------------------
+COMPONENT: cst816d
+PROJECT: 01_easytest
+PROJECT: keychainos
+PROJECT: keychainos_backup
+PROJECT: keychainos_display_working
+PROJECT: keychainos_launcher_working
+PROJECT: keychainos_phase2_working
+PROJECT: keychainos_phase3_backup
+
+----------------------------------------
+COMPONENT: launcher
+PROJECT: 01_easytest
+PROJECT: keychainos_launcher_working
+PROJECT: keychainos_phase2_working
+PROJECT: keychainos_phase3_backup
+
+----------------------------------------
+COMPONENT: gestures
+
+----------------------------------------
+COMPONENT: theme
+PROJECT: 01_easytest
+PROJECT: 02_lvgl_demo_v9
+PROJECT: keychainos
+PROJECT: keychainos_backup
+PROJECT: keychainos_display_working
+PROJECT: keychainos_launcher_working
+PROJECT: keychainos_phase2_working
+PROJECT: keychainos_phase3_backup
+
+----------------------------------------
+COMPONENT: bitmap
+PROJECT: keychainos_backup
+
+----------------------------------------
+COMPONENT: icons
+PROJECT: keychainos_backup
+
+----------------------------------------
+COMPONENT: registry
+PROJECT: 01_easytest
+PROJECT: keychainos_launcher_working
+PROJECT: keychainos_phase2_working
+PROJECT: keychainos_phase3_backup
+

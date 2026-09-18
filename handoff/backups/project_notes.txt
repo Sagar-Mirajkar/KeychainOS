@@ -1,0 +1,18 @@
+PROJECT NOTES
+
+Update this file manually whenever important discoveries occur.
+
+Template:
+
+Date:
+
+Observation:
+
+What Works:
+
+What Failed:
+
+Next Step:
+
+Reference Project Used:
+

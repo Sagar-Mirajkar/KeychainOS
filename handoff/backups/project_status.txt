@@ -1,0 +1,39 @@
+PROJECT STATUS
+Generated: MANUAL
+
+ACTIVE PROJECT
+--------------
+waves
+
+Status:
+In Progress
+
+Reference:
+micropython
+
+Lessons:
+keychainos
+
+KNOWN WORKING
+-------------
+
+Display
+Touch
+ST7789
+CST816D
+Launcher
+Theme System
+Registry
+
+KNOWN BLOCKERS
+--------------
+
+Audio
+Scheduler
+Integration
+
+NEXT TARGET
+-----------
+
+Complete Waves using Micropython architecture.
+

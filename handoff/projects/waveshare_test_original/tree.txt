@@ -1,0 +1,8 @@
+CMakeLists.txt
+README.md
+main/CMakeLists.txt
+main/Kconfig.projbuild
+main/idf_component.yml
+main/lvgl_demo_ui.c
+main/spi_lcd_touch_example_main.c
+sdkconfig.defaults

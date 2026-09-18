@@ -1,0 +1,263 @@
+LATEST ACTIVITY
+Generated: 2026-09-18 13:29:34
+
+==================================================
+PROJECT: hello_world
+==================================================
+2026-08-29 09:46:20.4231167630 /root/hello_world/sdkconfig
+2026-08-29 09:45:09.9331167900 /root/hello_world/main/CMakeLists.txt
+2026-08-29 09:45:09.9331167900 /root/hello_world/CMakeLists.txt
+2026-08-29 09:45:09.9031167900 /root/hello_world/main/hello_world.c
+
+==================================================
+PROJECT: hello_world
+==================================================
+2026-09-01 10:15:49.2110615170 /root/projects/hello_world/main/theme/theme.h
+2026-09-01 10:15:49.2010615170 /root/projects/hello_world/main/theme/theme.c
+2026-09-01 10:15:49.1910615170 /root/projects/hello_world/main/ui/ui.h
+2026-09-01 10:15:49.1910615170 /root/projects/hello_world/main/ui/ui.c
+2026-09-01 10:15:49.1810615170 /root/projects/hello_world/main/touch/cst816d.h
+2026-09-01 10:15:49.1810615170 /root/projects/hello_world/main/touch/cst816d.c
+2026-09-01 10:15:49.1710615170 /root/projects/hello_world/main/display/st7789.h
+2026-09-01 10:15:49.1610615170 /root/projects/hello_world/main/display/st7789.c
+2026-09-01 10:15:49.1610615170 /root/projects/hello_world/main/core/main.c
+2026-09-01 10:15:49.1510615170 /root/projects/hello_world/main/core/boot.h
+2026-09-01 10:15:49.1510615170 /root/projects/hello_world/main/core/boot.c
+2026-09-01 10:15:49.1410615170 /root/projects/hello_world/main/CMakeLists.txt
+2026-09-01 10:15:36.9910615210 /root/projects/hello_world/.vscode/settings.json
+2026-09-01 10:15:36.9910615210 /root/projects/hello_world/.vscode/launch.json
+2026-09-01 10:15:36.9810615210 /root/projects/hello_world/.vscode/c_cpp_properties.json
+2026-09-01 10:15:36.9710615210 /root/projects/hello_world/.devcontainer/devcontainer.json
+2026-09-01 10:15:36.9710615210 /root/projects/hello_world/.devcontainer/Dockerfile
+2026-09-01 10:15:36.9610615210 /root/projects/hello_world/sdkconfig.ci
+2026-09-01 10:15:36.9610615210 /root/projects/hello_world/sdkconfig
+2026-09-01 10:15:36.9610615210 /root/projects/hello_world/README.md
+
+==================================================
+PROJECT: keychainos
+==================================================
+2026-09-08 14:55:40.5375561070 /root/projects/keychainos/main/ui/home.c
+2026-09-08 14:52:15.5675561850 /root/projects/keychainos/main/CMakeLists.txt
+2026-09-07 15:24:25.6290975080 /root/projects/keychainos/main/display/st7789.h
+2026-09-07 15:24:25.5290975080 /root/projects/keychainos/main/display/st7789.c
+2026-09-07 15:17:05.6863647150 /root/projects/keychainos/main/display/st7789.c.current
+2026-09-07 03:43:20.3884353160 /root/projects/keychainos/keychain_build_status.txt
+2026-09-07 03:37:50.0805314370 /root/projects/keychainos/main/core/boot.c
+2026-09-06 19:36:16.5727906330 /root/projects/keychainos/sdkconfig
+2026-09-06 19:34:28.7227906740 /root/projects/keychainos/main/ui/theme.h
+2026-09-06 19:04:02.0327913710 /root/projects/keychainos/main/ui/bitmap.c
+2026-09-06 19:03:49.4227913760 /root/projects/keychainos/main/ui/bitmap.h
+2026-09-06 18:57:58.6327915090 /root/projects/keychainos/main/ui/font.h
+2026-09-06 18:56:31.2727915430 /root/projects/keychainos/main/ui/home.h
+2026-09-06 17:14:59.8352174400 /root/projects/keychainos/main/ui/font.c
+2026-09-06 17:11:47.3552175130 /root/projects/keychainos/main/ui/icons.c
+2026-09-06 17:11:32.7652175190 /root/projects/keychainos/main/ui/icons.h
+2026-09-05 16:58:09.7831124330 /root/projects/keychainos/main/debug/touch_raw_diag.c
+2026-09-05 14:24:07.3750339630 /root/projects/keychainos/touch_backup/cst816d_diff.txt
+2026-09-05 14:24:07.2550339630 /root/projects/keychainos/touch_backup/cst816d.h
+2026-09-05 14:24:07.1950339630 /root/projects/keychainos/touch_backup/cst816d.c
+
+==================================================
+PROJECT: keychainos_backup
+==================================================
+2026-09-01 12:48:36.4074732570 /root/projects/keychainos_backup/main/theme/theme.h
+2026-09-01 12:48:36.4074732570 /root/projects/keychainos_backup/main/theme/theme.c
+2026-09-01 12:48:36.3974732570 /root/projects/keychainos_backup/main/ui/ui.h
+2026-09-01 12:48:36.3974732570 /root/projects/keychainos_backup/main/ui/ui.c
+2026-09-01 12:48:36.3874732570 /root/projects/keychainos_backup/main/touch/cst816d.h
+2026-09-01 12:48:36.3874732570 /root/projects/keychainos_backup/main/touch/cst816d.c
+2026-09-01 12:48:36.3774732570 /root/projects/keychainos_backup/main/display/st7789.h
+2026-09-01 12:48:36.3774732570 /root/projects/keychainos_backup/main/display/st7789.c.bak
+2026-09-01 12:48:36.3674732570 /root/projects/keychainos_backup/main/display/st7789.c
+2026-09-01 12:48:36.3574732570 /root/projects/keychainos_backup/main/core/main.c
+2026-09-01 12:48:36.3574732570 /root/projects/keychainos_backup/main/core/boot.h
+2026-09-01 12:48:36.3574732570 /root/projects/keychainos_backup/main/core/boot.c
+2026-09-01 12:48:36.3574732570 /root/projects/keychainos_backup/main/CMakeLists.txt
+2026-09-01 12:48:36.3574732570 /root/projects/keychainos_backup/.vscode/settings.json
+2026-09-01 12:48:36.3474732570 /root/projects/keychainos_backup/.vscode/launch.json
+2026-09-01 12:48:36.3474732570 /root/projects/keychainos_backup/.vscode/c_cpp_properties.json
+2026-09-01 12:48:36.3474732570 /root/projects/keychainos_backup/.devcontainer/Dockerfile
+2026-09-01 12:48:36.3374732570 /root/projects/keychainos_backup/sdkconfig.ci
+2026-09-01 12:48:36.3374732570 /root/projects/keychainos_backup/.devcontainer/devcontainer.json
+2026-09-01 12:48:36.3274732570 /root/projects/keychainos_backup/sdkconfig
+
+==================================================
+PROJECT: keychainos_display_working
+==================================================
+2026-09-02 11:24:23.0121167620 /root/projects/keychainos_display_working/main/launcher/launcher.c
+2026-09-02 11:24:23.0121167620 /root/projects/keychainos_display_working/main/apps/registry.h
+2026-09-02 11:24:23.0121167620 /root/projects/keychainos_display_working/main/apps/registry.c
+2026-09-02 11:24:23.0021167620 /root/projects/keychainos_display_working/main/launcher/launcher.h
+2026-09-02 11:24:22.9721167620 /root/projects/keychainos_display_working/main/theme/theme.h
+2026-09-02 11:24:22.9621167620 /root/projects/keychainos_display_working/main/ui/ui.h
+2026-09-02 11:24:22.9621167620 /root/projects/keychainos_display_working/main/ui/ui.c
+2026-09-02 11:24:22.9621167620 /root/projects/keychainos_display_working/main/theme/theme.c
+2026-09-02 11:24:22.9521167620 /root/projects/keychainos_display_working/main/touch/cst816d.h
+2026-09-02 11:24:22.9421167620 /root/projects/keychainos_display_working/main/touch/cst816d.c
+2026-09-02 11:24:22.9321167620 /root/projects/keychainos_display_working/main/display/st7789.h
+2026-09-02 11:24:22.9321167620 /root/projects/keychainos_display_working/main/display/st7789.c.tmp
+2026-09-02 11:24:22.9321167620 /root/projects/keychainos_display_working/main/display/st7789.c.bak
+2026-09-02 11:24:22.9321167620 /root/projects/keychainos_display_working/main/display/st7789.c
+2026-09-02 11:24:22.9221167620 /root/projects/keychainos_display_working/main/core/main.c
+2026-09-02 11:24:22.9221167620 /root/projects/keychainos_display_working/main/core/boot.h
+2026-09-02 11:24:22.9121167620 /root/projects/keychainos_display_working/main/core/boot.c
+2026-09-02 11:24:22.9121167620 /root/projects/keychainos_display_working/main/CMakeLists.txt
+2026-09-02 11:24:22.9021167620 /root/projects/keychainos_display_working/.vscode/settings.json
+2026-09-02 11:24:22.9021167620 /root/projects/keychainos_display_working/.vscode/launch.json
+
+==================================================
+PROJECT: keychainos_launcher_working
+==================================================
+2026-09-02 11:35:16.7824457310 /root/projects/keychainos_launcher_working/main/launcher/launcher.c
+2026-09-02 11:35:16.7824457310 /root/projects/keychainos_launcher_working/main/apps/registry.h
+2026-09-02 11:35:16.7824457310 /root/projects/keychainos_launcher_working/main/apps/registry.c
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/ui/ui.h
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/ui/ui.c
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/touch/cst816d.h
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/touch/cst816d.c
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/theme/theme.h
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/theme/theme.c
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/launcher/launcher.h
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/display/st7789.h
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/display/st7789.c.bak
+2026-09-02 11:35:16.7724457310 /root/projects/keychainos_launcher_working/main/display/st7789.c
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/main/display/st7789.c.tmp
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/main/core/main.c
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/main/core/boot.h
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/main/core/boot.c
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/main/CMakeLists.txt
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/.vscode/settings.json
+2026-09-02 11:35:16.7624457310 /root/projects/keychainos_launcher_working/.vscode/launch.json
+
+==================================================
+PROJECT: keychainos_phase2_working
+==================================================
+2026-09-01 13:57:10.6231102680 /root/projects/keychainos_phase2_working/main/launcher/launcher.h
+2026-09-01 13:57:10.6231102680 /root/projects/keychainos_phase2_working/main/launcher/launcher.c
+2026-09-01 13:57:10.6231102680 /root/projects/keychainos_phase2_working/main/apps/registry.h
+2026-09-01 13:57:10.6231102680 /root/projects/keychainos_phase2_working/main/apps/registry.c
+2026-09-01 13:57:10.6131102680 /root/projects/keychainos_phase2_working/main/theme/theme.h
+2026-09-01 13:57:10.6131102680 /root/projects/keychainos_phase2_working/main/theme/theme.c
+2026-09-01 13:57:10.6031102680 /root/projects/keychainos_phase2_working/main/ui/ui.h
+2026-09-01 13:57:10.6031102680 /root/projects/keychainos_phase2_working/main/ui/ui.c
+2026-09-01 13:57:10.6031102680 /root/projects/keychainos_phase2_working/main/touch/cst816d.h
+2026-09-01 13:57:10.5931102680 /root/projects/keychainos_phase2_working/main/touch/cst816d.c
+2026-09-01 13:57:10.5931102680 /root/projects/keychainos_phase2_working/main/display/st7789.h
+2026-09-01 13:57:10.5931102680 /root/projects/keychainos_phase2_working/main/display/st7789.c.bak
+2026-09-01 13:57:10.5931102680 /root/projects/keychainos_phase2_working/main/display/st7789.c
+2026-09-01 13:57:10.5831102680 /root/projects/keychainos_phase2_working/main/core/main.c
+2026-09-01 13:57:10.5831102680 /root/projects/keychainos_phase2_working/main/core/boot.h
+2026-09-01 13:57:10.5831102680 /root/projects/keychainos_phase2_working/main/core/boot.c
+2026-09-01 13:57:10.5731102680 /root/projects/keychainos_phase2_working/main/CMakeLists.txt
+2026-09-01 13:57:10.5631102680 /root/projects/keychainos_phase2_working/.vscode/settings.json
+2026-09-01 13:57:10.5631102680 /root/projects/keychainos_phase2_working/.vscode/launch.json
+2026-09-01 13:57:10.5531102680 /root/projects/keychainos_phase2_working/.vscode/c_cpp_properties.json
+
+==================================================
+PROJECT: keychainos_phase3_backup
+==================================================
+2026-09-01 14:06:47.0931100480 /root/projects/keychainos_phase3_backup/main/apps/registry.c
+2026-09-01 14:06:47.0831100480 /root/projects/keychainos_phase3_backup/main/launcher/launcher.h
+2026-09-01 14:06:47.0831100480 /root/projects/keychainos_phase3_backup/main/launcher/launcher.c
+2026-09-01 14:06:47.0831100480 /root/projects/keychainos_phase3_backup/main/apps/registry.h
+2026-09-01 14:06:47.0731100480 /root/projects/keychainos_phase3_backup/main/ui/ui.h
+2026-09-01 14:06:47.0731100480 /root/projects/keychainos_phase3_backup/main/theme/theme.h
+2026-09-01 14:06:47.0731100480 /root/projects/keychainos_phase3_backup/main/theme/theme.c
+2026-09-01 14:06:47.0631100480 /root/projects/keychainos_phase3_backup/main/ui/ui.c
+2026-09-01 14:06:47.0631100480 /root/projects/keychainos_phase3_backup/main/touch/cst816d.h
+2026-09-01 14:06:47.0631100480 /root/projects/keychainos_phase3_backup/main/touch/cst816d.c
+2026-09-01 14:06:47.0531100480 /root/projects/keychainos_phase3_backup/main/display/st7789.h
+2026-09-01 14:06:47.0531100480 /root/projects/keychainos_phase3_backup/main/display/st7789.c.bak
+2026-09-01 14:06:47.0531100480 /root/projects/keychainos_phase3_backup/main/display/st7789.c
+2026-09-01 14:06:47.0431100480 /root/projects/keychainos_phase3_backup/main/core/main.c
+2026-09-01 14:06:47.0431100480 /root/projects/keychainos_phase3_backup/main/core/boot.h
+2026-09-01 14:06:47.0431100480 /root/projects/keychainos_phase3_backup/main/core/boot.c
+2026-09-01 14:06:47.0331100480 /root/projects/keychainos_phase3_backup/main/CMakeLists.txt
+2026-09-01 14:06:47.0331100480 /root/projects/keychainos_phase3_backup/.vscode/settings.json
+2026-09-01 14:06:47.0231100480 /root/projects/keychainos_phase3_backup/.vscode/launch.json
+2026-09-01 14:06:47.0231100480 /root/projects/keychainos_phase3_backup/.vscode/c_cpp_properties.json
+
+==================================================
+PROJECT: 01_easytest
+==================================================
+2026-09-16 10:08:31.2766492050 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/sd_manager.c
+2026-09-16 09:45:06.5343553570 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/CMakeLists.txt
+2026-09-16 09:36:05.4714809630 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/sd_manager.h
+2026-09-12 16:01:30.8167357140 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/dynamic_launcher.c
+2026-09-12 16:01:17.3667357190 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/app_discovery.c
+2026-09-12 16:00:57.4267357270 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/app_manifest.c
+2026-09-12 16:00:43.2767357320 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/manifest.c
+2026-09-12 15:58:58.0867357730 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/storage.c
+2026-09-12 14:27:44.4232408220 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/idf_component.yml
+2026-09-12 14:17:54.6832410470 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/filemanager.c
+2026-09-12 14:01:46.8532414170 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/main.c
+2026-09-12 12:00:53.1240965650 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/calculator.c
+2026-09-12 11:15:26.3469379320 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/fs_browser.c
+2026-09-12 11:09:32.1869380670 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/media.c
+2026-09-12 11:08:31.6969380900 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/fs_browser.h
+2026-09-12 10:54:19.2830676340 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/home_registry.c
+2026-09-12 10:54:09.6730676380 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/app_drawer.c
+2026-09-12 10:53:44.0430676480 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/nav.c
+2026-09-12 10:53:24.3730676550 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/nav.h
+2026-09-12 08:26:38.3872993680 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/apps.h
+
+==================================================
+PROJECT: 02_lvgl_demo_v9
+==================================================
+2026-09-08 15:59:31.6891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/sdkconfig.defaults
+2026-09-08 15:59:31.6891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/sdkconfig
+2026-09-08 15:59:31.6791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/partitions.csv
+2026-09-08 15:59:31.6791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/main/main.c
+2026-09-08 15:59:31.6791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/main/idf_component.yml
+2026-09-08 15:59:31.6791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/main/CMakeLists.txt
+2026-09-08 15:59:31.6791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/dependencies.lock
+2026-09-08 15:59:31.6691183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/waveshare__esp_lcd_touch_ft6336/include/esp_lcd_touch_ft6336.h
+2026-09-08 15:59:31.6691183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/waveshare__esp_lcd_touch_ft6336/esp_lcd_touch_ft6336.c
+2026-09-08 15:59:31.6591183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/waveshare__esp_lcd_touch_ft6336/CMakeLists.txt
+2026-09-08 15:59:31.6591183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/priv_include/bsp_err_check.h
+2026-09-08 15:59:31.6491183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/include/bsp/touch.h
+2026-09-08 15:59:31.6391183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/include/bsp/esp32_s3_lcd_driver_board.h
+2026-09-08 15:59:31.6391183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/include/bsp/esp-bsp.h
+2026-09-08 15:59:31.6391183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/include/bsp/display.h
+2026-09-08 15:59:31.6391183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/include/bsp/config.h
+2026-09-08 15:59:31.6191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/idf_component.yml
+2026-09-08 15:59:31.6191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/esp32_s3_lcd_driver_board.c
+2026-09-08 15:59:31.6191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/README.md
+2026-09-08 15:59:31.6191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/components/esp32_s3_lcd_driver_board/LICENSE
+
+==================================================
+PROJECT: 03_esp-brookesia
+==================================================
+2026-09-08 15:59:33.8191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/sdkconfig.defaults
+2026-09-08 15:59:33.8091183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/sdkconfig
+2026-09-08 15:59:33.8091183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/partitions.csv
+2026-09-08 15:59:33.8091183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/main/main.cpp
+2026-09-08 15:59:33.7991183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/main/idf_component.yml
+2026-09-08 15:59:33.7991183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/main/CMakeLists.txt
+2026-09-08 15:59:33.7991183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/dependencies.lock
+2026-09-08 15:59:33.7891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/waveshare__esp_lcd_touch_ft6336/include/esp_lcd_touch_ft6336.h
+2026-09-08 15:59:33.7891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/waveshare__esp_lcd_touch_ft6336/esp_lcd_touch_ft6336.c
+2026-09-08 15:59:33.7891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/waveshare__esp_lcd_touch_ft6336/CMakeLists.txt
+2026-09-08 15:59:33.7791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/priv_include/bsp_err_check.h
+2026-09-08 15:59:33.7791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/include/bsp/touch.h
+2026-09-08 15:59:33.7791183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/include/bsp/esp32_s3_lcd_driver_board.h
+2026-09-08 15:59:33.7691183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/include/bsp/esp-bsp.h
+2026-09-08 15:59:33.7691183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/include/bsp/display.h
+2026-09-08 15:59:33.7691183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/include/bsp/config.h
+2026-09-08 15:59:33.7491183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/idf_component.yml
+2026-09-08 15:59:33.7491183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/esp32_s3_lcd_driver_board.c
+2026-09-08 15:59:33.7491183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/README.md
+2026-09-08 15:59:33.7491183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/components/esp32_s3_lcd_driver_board/LICENSE
+
+==================================================
+PROJECT: waveshare_test_original
+==================================================
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/sdkconfig.defaults
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/main/spi_lcd_touch_example_main.c
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/main/lvgl_demo_ui.c
+2026-09-08 15:40:29.4626812520 /root/projects/waveshare_test_original/main/idf_component.yml
+2026-09-08 15:40:29.4626812520 /root/projects/waveshare_test_original/main/Kconfig.projbuild
+2026-09-08 15:40:29.4526812520 /root/projects/waveshare_test_original/main/CMakeLists.txt
+2026-09-08 15:40:29.4526812520 /root/projects/waveshare_test_original/README.md
+2026-09-08 15:40:29.4426812520 /root/projects/waveshare_test_original/CMakeLists.txt
+

@@ -1,0 +1,64 @@
+LATEST BUILD ANALYSIS
+Generated: 2026-09-18 13:35:52
+
+TARGET ARCHITECTURE
+Micropython
+
+ACTIVE PROJECT DETECTION
+==================================================
+
+PROJECT: hello_world
+Latest Activity:
+2026-08-29 09:46:20.4231167630 /root/hello_world/sdkconfig
+
+PROJECT: hello_world
+Latest Activity:
+2026-08-29 09:46:20.4231167630 /root/hello_world/sdkconfig
+
+PROJECT: keychainos
+Latest Activity:
+2026-09-08 14:55:40.5375561070 /root/projects/keychainos/main/ui/home.c
+
+PROJECT: keychainos_backup
+Latest Activity:
+2026-09-01 12:48:36.4074732570 /root/projects/keychainos_backup/main/theme/theme.h
+
+PROJECT: keychainos_display_working
+Latest Activity:
+2026-09-02 11:24:23.0121167620 /root/projects/keychainos_display_working/main/launcher/launcher.c
+
+PROJECT: keychainos_launcher_working
+Latest Activity:
+2026-09-02 11:35:16.7824457310 /root/projects/keychainos_launcher_working/main/launcher/launcher.c
+
+PROJECT: keychainos_phase2_working
+Latest Activity:
+2026-09-01 13:57:10.6231102680 /root/projects/keychainos_phase2_working/main/launcher/launcher.h
+
+PROJECT: keychainos_phase3_backup
+Latest Activity:
+2026-09-01 14:06:47.0931100480 /root/projects/keychainos_phase3_backup/main/apps/registry.c
+
+PROJECT: 01_easytest
+Latest Activity:
+2026-09-16 10:08:31.2766492050 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest/main/sd_manager.c
+
+PROJECT: 02_lvgl_demo_v9
+Latest Activity:
+2026-09-08 15:59:31.6891183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9/sdkconfig.defaults
+
+PROJECT: 03_esp-brookesia
+Latest Activity:
+2026-09-08 15:59:33.8191183930 /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia/sdkconfig.defaults
+
+PROJECT: waveshare_test_original
+Latest Activity:
+2026-09-08 15:40:29.4726812520 /root/projects/waveshare_test_original/sdkconfig.defaults
+
+WAY FORWARD
+==================================================
+1. Use Micropython as target architecture.
+2. Prefer latest modified project.
+3. Reuse verified working components.
+4. Continue from the newest files.
+5. Avoid redesigning proven modules.

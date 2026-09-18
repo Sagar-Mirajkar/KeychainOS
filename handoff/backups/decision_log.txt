@@ -1,0 +1,23 @@
+DECISION LOG
+
+2026-09-15
+
+Micropython selected as primary reference.
+
+Reason:
+Most complete architecture.
+
+------------------------------------------------
+
+KeychainOS retained as lessons-learned project.
+
+Reason:
+Contains launcher, gesture, registry and theme work.
+
+------------------------------------------------
+
+Waves selected as active development target.
+
+Reason:
+Current objective.
+

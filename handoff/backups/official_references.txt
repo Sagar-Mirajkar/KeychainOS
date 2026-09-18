@@ -1,0 +1,34 @@
+OFFICIAL REFERENCES
+
+Board:
+Waveshare 2inch Capacitive Touch LCD
+
+Display:
+ST7789
+
+Touch:
+CST816D
+
+Pins:
+
+LCD_SCLK=1
+LCD_MOSI=2
+LCD_MISO=42
+LCD_CS=39
+LCD_DC=41
+LCD_RST=40
+LCD_BL=6
+
+TP_SDA=15
+TP_SCL=7
+TP_RST=16
+TP_INT=17
+
+SD_CS=38
+
+Reference Sources:
+
+https://docs.waveshare.com/ESP32-S3-LCD-Driver-Board
+
+https://www.waveshare.com/wiki/2inch_Capacitive_Touch_LCD
+

@@ -1,0 +1,13 @@
+/root/04_sd_media_test
+/root/hello_world
+/root/projects/hello_world
+/root/projects/keychainos
+/root/projects/keychainos_backup
+/root/projects/keychainos_display_working
+/root/projects/keychainos_launcher_working
+/root/projects/keychainos_phase2_working
+/root/projects/keychainos_phase3_backup
+/root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest
+/root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9
+/root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia
+/root/projects/waveshare_test_original
