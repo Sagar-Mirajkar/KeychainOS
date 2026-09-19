@@ -1,10 +1,10 @@
 PROJECT TREES
-Generated: 2026-09-18 13:28:23
+Generated: 2026-09-19 10:29:15
 
 ==================================================
 PROJECT: hello_world
 PATH: /root/hello_world
-TIMESTAMP: 2026-09-18 13:28:23
+TIMESTAMP: 2026-09-19 10:29:15
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -15,7 +15,7 @@ sdkconfig
 ==================================================
 PROJECT: hello_world
 PATH: /root/projects/hello_world
-TIMESTAMP: 2026-09-18 13:28:23
+TIMESTAMP: 2026-09-19 10:29:15
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -37,7 +37,7 @@ sdkconfig
 ==================================================
 PROJECT: keychainos
 PATH: /root/projects/keychainos
-TIMESTAMP: 2026-09-18 13:28:24
+TIMESTAMP: 2026-09-19 10:29:15
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -81,7 +81,7 @@ touch_backup/cst816d.h
 ==================================================
 PROJECT: keychainos_backup
 PATH: /root/projects/keychainos_backup
-TIMESTAMP: 2026-09-18 13:28:24
+TIMESTAMP: 2026-09-19 10:29:16
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -103,7 +103,7 @@ sdkconfig
 ==================================================
 PROJECT: keychainos_display_working
 PATH: /root/projects/keychainos_display_working
-TIMESTAMP: 2026-09-18 13:28:24
+TIMESTAMP: 2026-09-19 10:29:39
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -129,7 +129,7 @@ sdkconfig
 ==================================================
 PROJECT: keychainos_launcher_working
 PATH: /root/projects/keychainos_launcher_working
-TIMESTAMP: 2026-09-18 13:28:25
+TIMESTAMP: 2026-09-19 10:29:40
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -155,7 +155,7 @@ sdkconfig
 ==================================================
 PROJECT: keychainos_phase2_working
 PATH: /root/projects/keychainos_phase2_working
-TIMESTAMP: 2026-09-18 13:28:25
+TIMESTAMP: 2026-09-19 10:29:40
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -181,7 +181,7 @@ sdkconfig
 ==================================================
 PROJECT: keychainos_phase3_backup
 PATH: /root/projects/keychainos_phase3_backup
-TIMESTAMP: 2026-09-18 13:28:25
+TIMESTAMP: 2026-09-19 10:29:40
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
@@ -207,7 +207,7 @@ sdkconfig
 ==================================================
 PROJECT: 01_easytest
 PATH: /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/01_easytest
-TIMESTAMP: 2026-09-18 13:28:26
+TIMESTAMP: 2026-09-19 10:29:41
 ==================================================
 CMakeLists.txt
 components/esp32_s3_lcd_driver_board/CMakeLists.txt
@@ -341,7 +341,7 @@ sdkconfig
 ==================================================
 PROJECT: 02_lvgl_demo_v9
 PATH: /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/02_lvgl_demo_v9
-TIMESTAMP: 2026-09-18 13:28:26
+TIMESTAMP: 2026-09-19 10:29:41
 ==================================================
 CMakeLists.txt
 components/esp32_s3_lcd_driver_board/CMakeLists.txt
@@ -364,7 +364,7 @@ sdkconfig
 ==================================================
 PROJECT: 03_esp-brookesia
 PATH: /root/projects/waveshare_test/ESP32-S3-LCD-Driver-Board/ESP-IDF/03_esp-brookesia
-TIMESTAMP: 2026-09-18 13:28:26
+TIMESTAMP: 2026-09-19 10:29:41
 ==================================================
 CMakeLists.txt
 components/brookesia_app_squareline_demo/CMakeLists.txt
@@ -731,7 +731,7 @@ sdkconfig
 ==================================================
 PROJECT: waveshare_test_original
 PATH: /root/projects/waveshare_test_original
-TIMESTAMP: 2026-09-18 13:28:32
+TIMESTAMP: 2026-09-19 10:29:41
 ==================================================
 CMakeLists.txt
 main/CMakeLists.txt
